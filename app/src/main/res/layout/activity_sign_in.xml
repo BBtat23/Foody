@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_food"
+    tools:context=".SignIn">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/phone_EditText"
+            android:hint="Phone Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:text="0123456789"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/name_EditText"
+            android:hint="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:text="Tom Cruise"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/passWord_EditText"
+            android:hint="PassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword"
+            android:text="1234"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signIn_Button"
+        android:text="Sign In"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:shadowRadius="4"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
